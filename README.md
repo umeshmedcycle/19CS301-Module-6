@@ -1,47 +1,58 @@
 # 19CS301-Module-6
 EX: 6.1   POLYMORPHISM
 
-### AIM: To Create two specific classes- Beans and Mango. Along with that, create a generic function that tells us the type and color of the object we pass. Mind you, since we have passed only “obj” through it, this obj can be any object.
+### AIM: 
 
+To create two classes: Lion and Giraffe, each defining a method named type() differently, and to demonstrate how objects from each class respond to the same method name with different behaviors.
 
 ### ALGORITHM:
-Step1: create class Beans and def a function type and color
+Step 1: Create a class Lion.
+      
 
-Step 2: create a class Mango and def a function type and color
+Step 2: Create another class Giraffe.
 
-Step3: def a function func
 
-Step 4: call the objects and execute the program
+Step 3: Define a generic function func(obj).
+       
+
+Step 4: Create objects of both Lion and Giraffe.
+
+
+Step 5: Call the func() function for each object and observe the output.
+
+
+Step 6: Terminate the program.
 
 ### PROGRAM:
 ```
-class Beans ():
-    def type(self):   
-          print("Vegetable")
-    def color(self):
-          print("Green")
-class Mango:
+class Lion:
+    def type(self):
+        print("carnivore")
+class Giraffe:
    def type(self):
-          print("Fruit")
-   def color(self):
-         print("Yellow")
-   def func(obj):
-         obj.type()
-         obj.color()
-         obj_beans = Beans()
-         obj_mango = Mango()
-         func(obj_beans)
-         func(obj_mango)
+        print("herbivore")
+
+obj_lion=Lion()
+obj_giraffe=Giraffe()
+
+obj_lion.type()
+# returns carnivore
+obj_giraffe.type()
 ```
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/b41a3e12-896b-4f6c-a9b2-19045a5088f9)
+![image](https://github.com/user-attachments/assets/ddf413c5-6551-4965-8f6e-07262304de8d)
 
 
-### RESULT: Thus, the program has been successfully executed.
+
+### RESULT: 
+
+Thus, the program has been successfully executed.
 
 EXP.No: 6.b OPERATOR OVERLOADING
 
-### AIM: write a python program to overload less than operator
+### AIM: 
+
+write a python program to overload less than operator
 ###ALGORITHM:
 Step1 :create class A and def init	 
 
@@ -63,21 +74,31 @@ ob2 = A(3)
 print(ob1<ob2)
 ```
 ###OUTPUT:
-![image](https://github.com/user-attachments/assets/dae03d17-1004-424e-a179-ef62fd2681bd)
+![image](https://github.com/user-attachments/assets/417f1463-1dc4-423e-a4db-82ceb9dadfd1)
 
 
 
-###RESULT: Thus, the program has been successfully executed.
+###RESULT: 
+    
+    
+Thus, the program has been successfully executed.
+
+
+
 EX: 6.3 ABSTRACT CLASS METHOD
 
-### AIM: To Create the abstract method calculate_area which is of the abstract class 'Shape'
+### AIM: 
+
+To Create the abstract method calculate_area which is of the abstract class 'Shape'
 
 ### ALGORITHM:
 Step1:Get input from the user
 
 Step2:put class function to define the function using self
 
-Step3:By using the function to find the area of the rectangle and circle Step4:Execute the program.
+Step3:By using the function to find the area of the rectangle and circle 
+
+Step4:Execute the program.
 
 ### PROGRAM:
 ```from abc import ABC
@@ -99,13 +120,19 @@ a.calculate_area()
 b.calculate_area()
 ```
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/a4c70e22-b3e0-417a-86d7-41f547c9d60d)
+![image](https://github.com/user-attachments/assets/0cadc313-4f13-40b9-b3e0-6afa5e5f449b)
 
 
-### RESULT: Thus, the program has been successfully executed.
+
+### RESULT: 
+
+Thus, the program has been successfully executed.
 
 EXP.No: 6.4     ENCAPSULATION
-### AIM: To Implement Encapsulation using private members –of a class rectangle with private variables length,width.
+### AIM: 
+
+
+To Implement Encapsulation using private members –of a class rectangle with private variables length,width.
 ###ALGORITHM: Step1: put class function to define the function using self Step2: By using the function to find the area of the rectangle Step3: Execute the program.
 ###PROGRAM:
 ```
@@ -120,12 +147,13 @@ class Rectangle:
 rect = Rectangle()
 ```
 ### OUTPUT:
- 
-![image](https://github.com/user-attachments/assets/ea434dc1-3f93-4a66-8828-1d815e9ff015)
+![image](https://github.com/user-attachments/assets/3b4f3e8c-aa9c-4bbf-9c72-a149e7747c21)
 
  
 
-### RESULT: Thus, the program has been successfully executed
+### RESULT: 
+
+Thus, the program has been successfully executed
 
 
 
